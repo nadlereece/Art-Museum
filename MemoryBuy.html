@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang = en>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+<title> The Art E-Museum </title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="E-MuseumCSS.css" rel="stylesheet">
+<link rel = "icon" href = "Paint-Brush-Free-Download-PNG.png">
+
+<style>
+
+    #buyPiece {
+
+        border: 5px solid black;
+
+    }
+
+    th {
+
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    div {
+
+        font-family: 'Times New Roman', Times, serif;
+        word-wrap: break-word;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #options {
+
+        font-size: 20px;
+        padding-left: 30px;
+
+    }
+
+</style>
+
+<script>
+
+    const price = document.getElementById('price')
+    const options = document.getElementById('size')
+    const opt1 = document.getElementById('3x5')
+    const opt2 = document.getElementById('5x8')
+    const opt3 = document.getElementById('8x13')
+    const opt4 = document.getElementById('13x20')
+    const opt5 = document.getElementById('20x30')
+
+    if (options1.value = opt1) {
+        price.innerHTML = "Price: $5.00"
+    }
+    else if (options1.value = opt1) {
+        price.innerHTML = "Price: $11.45"
+    }   
+    else if (options1.value = opt2) {
+        price.innerHTML = "Price: $24.56"
+    }
+    else if (options1.value = opt3) {
+        price.innerHTML = "Price: $31.63"
+    }
+    else if (options1.value = opt4) {
+        price.innerHTML = "Price: $44.04"
+    }
+    else if (options1.value = opt5) {
+        price.innerHTML = "Price: $55.50"
+    }
+    else {
+        price.innerHTML = "Price: $0.00"
+    }
+
+
+</script>
+
+</head>
+
+<body>
+
+<div>
+
+    <a href = "E-Museum-Gallery.html"><img src="home.png" alt = "Home Icon" style="width:100px;height:100px; margin:12px; margin-top: 15px;"></a>
+    <a href = ""><img src="account.png" alt = "Account Icon" style="width:100px;height:100px; margin:12px; margin-left: 86.75%;"></a>
+    <h2> The Art E-Museum </h2>
+
+<table id = "tableMenu">
+
+    <tbody>
+
+        <tr>
+            <th id = "table-item"> <a href="E-Museum-Upload.html" id = upload>Upload </th>
+            <th id = "table-item"> <a href="E-Museum-Gallery.html" id = gallery>Gallery </th>
+            <th id = "table-item"> <a href="E-Museum-Log.html" id = log>Log-in/Sign-up </th>
+            </a>
+        </tr>
+
+    </tbody>
+    
+</table>   
+</div> 
+
+<br>
+<br>
+<br>
+
+<img src="Art/The_Persistence_of_Memory_Salvador_Dali_1931.jpg" alt="The Persistence of Memory, Salvador Dali, 1931" style="width:1000px; height:600px; margin-left: 425px;" id = "buyPiece">
+
+<br>
+<br>
+
+<p id = "price" style = "font-size: 30px; text-align: center;"> Price: $24.50 </p>
+
+<table id = artTable>
+
+<tbody>
+
+<tr>
+    <th id = "options">
+
+        <label for="sizes">Size:</label>
+        <select id="size" name="sizes">
+        <option id="select" value="select">Select</option>
+        <option id="3x5" value="3x5">3 X 5</option>
+        <option id="5x8" value="5x8">5 X 8</option>
+        <option id="8x13" value="8x13">8 X 13</option>
+        <option id="13x20" value="13x20">13 X 20</option>
+        <option id="20x30" value="20x30">20 X 30</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="FName">First Name:</label>
+        <input type="text" id="FName" name = "FName"><br></br>
+        
+        <label for="LName">Last Name:</label>
+        <input type="text" id="LName" name="LName"><br></br>
+
+        <label for="FName">Address:</label>
+        <input type="text" id="address" name = "address"><br></br>
+
+        <label for="LName">City:</label>
+        <input type="text" id="city" name="city"><br></br>
+
+        <label for="states">State:</label>
+        <select id="state" name="states">
+        <option value="select">Select</option>
+        <option value="Alabama">Alabama</option>
+        <option value="Alaska">Alaska</option>
+        <option value="Arizona">Arizona</option>
+        <option value="Arkansas">Arkansas</option>
+        <option value="California">California</option>
+        <option value="Colorado">Colorado</option>
+        <option value="Connecticut">Connecticut</option>
+        <option value="Delaware">Delaware</option>
+        <option value="Florida">Florida</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Hawaii">Hawaii</option>
+        <option value="Idaho">Idaho</option>
+        <option value="Illinois">Illinois</option>
+        <option value="Indiana">Indiana</option>
+        <option value="Iowa">Iowa</option>
+        <option value="Kansas">Kansas</option>
+        <option value="Kentucky">Kentucky</option>
+        <option value="Louisiana">Louisiana</option>
+        <option value="Maine">Maine</option>
+        <option value="Maryland">Maryland</option>
+        <option value="Massachusetts">Massachusetts</option>
+        <option value="Michigan">Michigan</option>
+        <option value="Minnesota">Minnesota</option>
+        <option value="Mississippi">Mississippi</option>
+        <option value="Missouri">Missouri</option>
+        <option value="Montana">Montana</option>
+        <option value="Nebraska">Nebraska</option>
+        <option value="Nevada">Nevada</option>
+        <option value="New Hampshire">New Hampshire</option>
+        <option value="New Jersey">New Jersey</option>
+        <option value="New Mexico">New Mexico</option>
+        <option value="New York">New York</option>
+        <option value="North Carolina">North Carolina</option>
+        <option value="North Dakota">North Dakota</option>
+        <option value="Ohio">Ohio</option>
+        <option value="Oklahoma">Oklahoma</option>
+        <option value="Oregon">Oregon</option>
+        <option value="Pennsylvania">Pennsylvania</option>
+        <option value="Rhode Island">Rhode Island</option>
+        <option value="South Carolina">South Carolina</option>
+        <option value="South Dakota">South Dakota</option>
+        <option value="Tennessee">Tennessee</option>
+        <option value="Texas">Texas</option>
+        <option value="Utah">Utah</option>
+        <option value="Vermont">Vermont</option>
+        <option value="Virginia">Virginia</option>
+        <option value="Washington">Washington</option>
+        <option value="West Virginia">West Virginia</option>
+        <option value="Wisconsin">Wisconsin</option>
+        <option value="Wyoming">Wyoming</option>
+        </select>
+
+        <label for="zip">Zip:</label>
+        <input type="text" id="zip" name="zip"> <br> <br>
+
+        <form>
+        <input type="radio" id="mastercard" name="card" value="MasterCard">
+        <label for="mastercard">MasterCard</label><br>
+        <input type="radio" id="visa" name="card" value="Visa">
+        <label for="visa">Visa</label><br>
+        <input type="radio" id="ameexp" name="card" value="American Express">
+        <label for="ameexp">American Express</label> <br> <br>
+        </form>
+
+        <label for="cardNum">Card Number:</label>
+        <input type="text" id="cardNum" name = "cardNum"><br></br>
+
+        <label for="cardName">Name on Card</label>
+        <input type="text" id="cardName" name="cardName"><br></br>
+
+        <label for="expiration">Expiration:</label>
+        <select id="expirationMon" name="expirationMon">
+            <option value="select">Select</option>
+            <option value="month">Month</option>
+        </select>
+
+        <select id="expirationYear" name="expirationYear">
+            <option value="select">Select</option>
+            <option value="expYear">Year</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="ccv">CCV:</label>
+        <input type="text" id="ccv" name="ccv"><br></br>
+
+        <input type="checkbox" id="frame" name="framed" value="Framed">
+        <label for="framed"> Framed </label> <br> <br>
+
+        <a href = "PaymentConfirmation.html"><button type="button">Submit</button></a>
+    </th>
+
+</tr>
+
+</tbody>
+</table>
+
+<br>
+<br>
+<br>
+
+</body>
+</html>
